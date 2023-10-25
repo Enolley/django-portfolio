@@ -1,0 +1,23 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+{% load static %}
+
+    <title>Enola Anne Julie</title>
+
+    <div class="hero">
+        <div class="text-box">
+            <p>I'M</p>
+            <h1>ENOLA</h1>
+            <h3>This is my official portfolio website</h3>
+            <div class="detel">
+                <a href="#">Download CV</a>
+            </div>
+        </div>
+        <div class="images">
+            <img src="{% static 'images/shape.png' %}" alt="" class="shape">
+            <img src="{% static 'images/me.png' %}" alt="" class="me">
+        </div>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+{% load static %}
+
+    <title>About</title>
+
+    <section class="abtme">
+        <div class="main">
+            <img src="{% static 'images/me2.jpg' %}" alt="">
+            <div class="abtme-text">
+                <h1>About Me</h1>
+                <h5>Web <span>Developer</span></h5>
+                <p>
+                    My name is Julie Anne Enola and I am a web developer. Well, that's what the rest of this portfolio talks about. In this section I want to list a few things about me. My hobbies include travelling, listening and making music and event organizing. I've also participated in other activities like shotput competition in high school, I emerged third. I have also held a few leadership positions like: Senator of the 2022 Finance Senate, Organizing secretary for the university chorale, leader of the environmental community in the SDG Hub,the head of events of the university media group and also was the entertainment captain in high school.
+                </p>
+                <a href="{% url 'main:contact' %}"><button class="mebtn" type="button">Let's Talk</button></a>
+            </div>
+        </div>
+    </section>
+{% endblock %}
